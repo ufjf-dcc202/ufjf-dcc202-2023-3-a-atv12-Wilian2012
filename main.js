@@ -4,8 +4,8 @@ import { getEstoque, transacao } from "./estoque.js";
 
 document.entrada.addEventListener('submit', leFormulario);
 
-const olJoao = document.querySelector("#olJoao");
-const olMaria = document.querySelector("#olMaria");
+const olJoao = document.querySelector("#joao");
+const olMaria = document.querySelector("#maria");
 
 atualizaTela();
 
@@ -43,3 +43,10 @@ function atualizaTela(){
     }
 }
    
+
+function limparListaJoao() {
+    olJoao.innerHTML = ""; // Limpa a lista
+}
+
+const botaoLimpar = document.querySelector("#Limpar");
+botaoLimpar.addEventListener('click', limparListaJoao);

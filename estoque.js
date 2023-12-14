@@ -40,7 +40,7 @@ function dePomarParaPessoa(destino, quantidade, fruta){
         
          if(pessoa[i].tipo === fruta){
             monte = pessoa[i];
-            break;
+            break;   
          }
       }
          if(!monte){
