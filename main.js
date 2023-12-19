@@ -1,6 +1,6 @@
 //main.js
 
-import { getEstoque, transacao } from "./estoque.js";
+import { limpaEstoque, getEstoque, transacao } from "./estoque.js";
 
 document.entrada.addEventListener('submit', leFormulario);
 
@@ -44,9 +44,9 @@ function atualizaTela(){
 }
    
 
-function limparListaJoao() {
-    olJoao.innerHTML = ""; // Limpa a lista
+function limparEstoque() {
+    olJoao.innerHTML = ""; 
 }
 
 const botaoLimpar = document.querySelector("#Limpar");
-botaoLimpar.addEventListener('click', limparListaJoao);
+botaoLimpar.addEventListener('click', limparEstoque);

@@ -70,3 +70,10 @@ function dePessoaParaPomar(origem, quantidade, fruta){
             monte.qtd += Math.min(quantidade, monte.qtd);
                 
          }
+
+         export function limpaEstoque(){
+            estoque={
+               'joao': [],
+               'maria': [],
+            };
+         }
